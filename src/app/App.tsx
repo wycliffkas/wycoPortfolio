@@ -8,7 +8,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="bg-[#0a0e27] min-h-screen">
+    <div className="bg-gradient-to-br from-[#0f0523] via-[#16052e] to-[#1a0b2e] min-h-screen">
       <Header />
       <Home />
       <Skills />

@@ -47,7 +47,7 @@ export function Projects() {
       id="projects"
       sx={{
         py: 12,
-        backgroundColor: '#0a0e27',
+        backgroundColor: 'transparent',
         position: 'relative'
       }}
     >
@@ -62,7 +62,9 @@ export function Projects() {
             variant="h2"
             align="center"
             sx={{
-              color: '#00bcd4',
+              background: 'linear-gradient(90deg, #7f5af0, #ff6b9d, #ffa94d)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
               mb: 2,
               fontWeight: 'bold'
             }}
@@ -85,14 +87,16 @@ export function Projects() {
             <Button
               onClick={() => setFilter('all')}
               sx={{
-                backgroundColor: filter === 'all' ? '#00bcd4' : 'transparent',
-                color: filter === 'all' ? '#0a0e27' : '#00bcd4',
-                border: '1px solid #00bcd4',
-                borderRadius: '20px',
-                px: 3,
+                background: filter === 'all' ? 'linear-gradient(90deg, #ff6b9d, #7f5af0)' : 'transparent',
+                color: '#fff',
+                border: filter === 'all' ? 'none' : '1px solid #7f5af0',
+                borderRadius: '25px',
+                px: 4,
                 textTransform: 'none',
+                boxShadow: filter === 'all' ? '0 5px 20px rgba(127, 90, 240, 0.4)' : 'none',
                 '&:hover': {
-                  backgroundColor: filter === 'all' ? '#00acc1' : 'rgba(0, 188, 212, 0.1)'
+                  background: filter === 'all' ? 'linear-gradient(90deg, #ff5086, #6a3fd9)' : 'rgba(127, 90, 240, 0.1)',
+                  borderColor: '#7f5af0'
                 }
               }}
             >
@@ -101,14 +105,16 @@ export function Projects() {
             <Button
               onClick={() => setFilter('frontend')}
               sx={{
-                backgroundColor: filter === 'frontend' ? '#00bcd4' : 'transparent',
-                color: filter === 'frontend' ? '#0a0e27' : '#00bcd4',
-                border: '1px solid #00bcd4',
-                borderRadius: '20px',
-                px: 3,
+                background: filter === 'frontend' ? 'linear-gradient(90deg, #ff6b9d, #7f5af0)' : 'transparent',
+                color: '#fff',
+                border: filter === 'frontend' ? 'none' : '1px solid #ff6b9d',
+                borderRadius: '25px',
+                px: 4,
                 textTransform: 'none',
+                boxShadow: filter === 'frontend' ? '0 5px 20px rgba(255, 107, 157, 0.4)' : 'none',
                 '&:hover': {
-                  backgroundColor: filter === 'frontend' ? '#00acc1' : 'rgba(0, 188, 212, 0.1)'
+                  background: filter === 'frontend' ? 'linear-gradient(90deg, #ff5086, #6a3fd9)' : 'rgba(255, 107, 157, 0.1)',
+                  borderColor: '#ff6b9d'
                 }
               }}
             >
@@ -117,14 +123,16 @@ export function Projects() {
             <Button
               onClick={() => setFilter('ux')}
               sx={{
-                backgroundColor: filter === 'ux' ? '#00bcd4' : 'transparent',
-                color: filter === 'ux' ? '#0a0e27' : '#00bcd4',
-                border: '1px solid #00bcd4',
-                borderRadius: '20px',
-                px: 3,
+                background: filter === 'ux' ? 'linear-gradient(90deg, #ff6b9d, #7f5af0)' : 'transparent',
+                color: '#fff',
+                border: filter === 'ux' ? 'none' : '1px solid #4ecdc4',
+                borderRadius: '25px',
+                px: 4,
                 textTransform: 'none',
+                boxShadow: filter === 'ux' ? '0 5px 20px rgba(78, 205, 196, 0.4)' : 'none',
                 '&:hover': {
-                  backgroundColor: filter === 'ux' ? '#00acc1' : 'rgba(0, 188, 212, 0.1)'
+                  background: filter === 'ux' ? 'linear-gradient(90deg, #ff5086, #6a3fd9)' : 'rgba(78, 205, 196, 0.1)',
+                  borderColor: '#4ecdc4'
                 }
               }}
             >
@@ -150,17 +158,21 @@ export function Projects() {
             >
               <Card
                 sx={{
-                  backgroundColor: 'rgba(20, 25, 50, 0.6)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(0, 188, 212, 0.2)',
-                  borderRadius: 2,
+                  backgroundColor: 'rgba(26, 11, 46, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(127, 90, 240, 0.3)',
+                  borderRadius: 3,
                   height: '100%',
                   transition: 'all 0.3s ease',
                   position: 'relative',
+                  overflow: 'hidden',
                   '&:hover': {
-                    transform: 'translateY(-5px)',
-                    borderColor: '#00bcd4',
-                    boxShadow: '0 10px 30px rgba(0, 188, 212, 0.3)'
+                    transform: 'translateY(-10px)',
+                    borderColor: '#ff6b9d',
+                    boxShadow: '0 15px 50px rgba(255, 107, 157, 0.4), 0 0 30px rgba(127, 90, 240, 0.3)',
+                    '& .project-image': {
+                      transform: 'scale(1.05)'
+                    }
                   }
                 }}
               >
@@ -172,10 +184,11 @@ export function Projects() {
                       position: 'absolute',
                       top: 16,
                       right: 16,
-                      backgroundColor: '#00bcd4',
-                      color: '#0a0e27',
+                      background: 'linear-gradient(90deg, #ff6b9d, #7f5af0)',
+                      color: '#fff',
                       fontWeight: 'bold',
-                      zIndex: 1
+                      zIndex: 1,
+                      boxShadow: '0 4px 15px rgba(255, 107, 157, 0.4)'
                     }}
                   />
                 )}
@@ -185,11 +198,24 @@ export function Projects() {
                   height="240"
                   image={project.image}
                   alt={project.title}
-                  sx={{ objectFit: 'cover' }}
+                  className="project-image"
+                  sx={{
+                    objectFit: 'cover',
+                    transition: 'transform 0.3s ease'
+                  }}
                 />
 
                 <CardContent>
-                  <Typography variant="h5" sx={{ color: '#00bcd4', mb: 2 }}>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      background: 'linear-gradient(90deg, #ff6b9d, #7f5af0)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      mb: 2,
+                      fontWeight: 'bold'
+                    }}
+                  >
                     {project.title}
                   </Typography>
 
@@ -198,28 +224,42 @@ export function Projects() {
                   </Typography>
 
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
-                    {project.tags.map((tag) => (
-                      <Chip
-                        key={tag}
-                        label={tag}
-                        size="small"
-                        sx={{
-                          backgroundColor: 'rgba(0, 188, 212, 0.1)',
-                          color: 'rgba(255, 255, 255, 0.8)',
-                          border: '1px solid rgba(0, 188, 212, 0.3)'
-                        }}
-                      />
-                    ))}
+                    {project.tags.map((tag, tagIndex) => {
+                      const tagColors = ['#ff6b9d', '#7f5af0', '#2cb67d', '#4ecdc4', '#ffa94d'];
+                      const tagColor = tagColors[tagIndex % tagColors.length];
+                      return (
+                        <Chip
+                          key={tag}
+                          label={tag}
+                          size="small"
+                          sx={{
+                            backgroundColor: `${tagColor}15`,
+                            color: 'rgba(255, 255, 255, 0.9)',
+                            border: `1px solid ${tagColor}40`,
+                            backdropFilter: 'blur(10px)',
+                            '&:hover': {
+                              backgroundColor: `${tagColor}25`,
+                              borderColor: tagColor,
+                              transform: 'scale(1.05)'
+                            }
+                          }}
+                        />
+                      );
+                    })}
                   </Box>
 
                   <Box sx={{ display: 'flex', gap: 2 }}>
                     <IconButton
                       sx={{
                         color: '#fff',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        border: '1px solid #7f5af0',
+                        backgroundColor: 'rgba(127, 90, 240, 0.1)',
+                        backdropFilter: 'blur(10px)',
                         '&:hover': {
-                          color: '#00bcd4',
-                          borderColor: '#00bcd4'
+                          color: '#7f5af0',
+                          borderColor: '#7f5af0',
+                          backgroundColor: 'rgba(127, 90, 240, 0.2)',
+                          boxShadow: '0 0 20px rgba(127, 90, 240, 0.4)'
                         }
                       }}
                     >
@@ -228,10 +268,14 @@ export function Projects() {
                     <IconButton
                       sx={{
                         color: '#fff',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        border: '1px solid #ff6b9d',
+                        backgroundColor: 'rgba(255, 107, 157, 0.1)',
+                        backdropFilter: 'blur(10px)',
                         '&:hover': {
-                          color: '#00bcd4',
-                          borderColor: '#00bcd4'
+                          color: '#ff6b9d',
+                          borderColor: '#ff6b9d',
+                          backgroundColor: 'rgba(255, 107, 157, 0.2)',
+                          boxShadow: '0 0 20px rgba(255, 107, 157, 0.4)'
                         }
                       }}
                     >

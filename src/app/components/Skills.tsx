@@ -14,37 +14,37 @@ const skillCategories = [
   {
     title: 'Frontend Development',
     icon: faCode,
-    color: '#e91e63',
+    color: '#ff6b9d',
     skills: ['Angular', 'React', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3']
   },
   {
     title: 'Backend Development',
     icon: faServer,
-    color: '#4caf50',
+    color: '#2cb67d',
     skills: ['Node.js', 'Express', 'PostgreSQL', 'MySQL', 'MongoDB', 'REST APIs']
   },
   {
     title: 'UI/UX Design',
     icon: faPaintBrush,
-    color: '#9c27b0',
+    color: '#7f5af0',
     skills: ['Figma', 'Responsive Design', 'Wireframing', 'Prototyping']
   },
   {
     title: 'Cloud & DevOps',
     icon: faCloud,
-    color: '#ff9800',
+    color: '#ffa94d',
     skills: ['AWS', 'Docker', 'Azure', 'Git', 'CI/CD', 'Linux']
   },
   {
     title: 'Tools & Technologies',
     icon: faTools,
-    color: '#f44336',
+    color: '#4ecdc4',
     skills: ['VS Code', 'Jest', 'Webpack', 'Firebase', 'Vercel', 'Vite']
   },
   {
     title: 'Creative Skills',
     icon: faLightbulb,
-    color: '#ffc107',
+    color: '#ff6b9d',
     skills: ['UI Animation', 'SVG Animation', '3D Modeling', 'Motion Graphics']
   }
 ];
@@ -55,7 +55,7 @@ export function Skills() {
       id="skills"
       sx={{
         py: 12,
-        backgroundColor: '#0a0e27',
+        backgroundColor: 'transparent',
         position: 'relative'
       }}
     >
@@ -70,7 +70,9 @@ export function Skills() {
             variant="h2"
             align="center"
             sx={{
-              color: '#00bcd4',
+              background: 'linear-gradient(90deg, #ff6b9d, #7f5af0, #4ecdc4)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
               mb: 2,
               fontWeight: 'bold'
             }}
@@ -107,16 +109,17 @@ export function Skills() {
             >
               <Card
                 sx={{
-                  backgroundColor: 'rgba(20, 25, 50, 0.6)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(0, 188, 212, 0.2)',
-                  borderRadius: 2,
+                  backgroundColor: 'rgba(26, 11, 46, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  border: `1px solid ${category.color}40`,
+                  borderRadius: 3,
                   height: '100%',
                   transition: 'all 0.3s ease',
                   '&:hover': {
-                    transform: 'translateY(-5px)',
+                    transform: 'translateY(-8px)',
                     borderColor: category.color,
-                    boxShadow: `0 10px 30px ${category.color}33`
+                    boxShadow: `0 15px 40px ${category.color}50`,
+                    backgroundColor: `${category.color}10`
                   }
                 }}
               >
@@ -148,11 +151,14 @@ export function Skills() {
                         label={skill}
                         size="small"
                         sx={{
-                          backgroundColor: 'rgba(0, 188, 212, 0.1)',
-                          color: 'rgba(255, 255, 255, 0.8)',
-                          border: '1px solid rgba(0, 188, 212, 0.3)',
+                          backgroundColor: `${category.color}15`,
+                          color: 'rgba(255, 255, 255, 0.9)',
+                          border: `1px solid ${category.color}40`,
+                          backdropFilter: 'blur(10px)',
                           '&:hover': {
-                            backgroundColor: 'rgba(0, 188, 212, 0.2)'
+                            backgroundColor: `${category.color}25`,
+                            borderColor: category.color,
+                            transform: 'scale(1.05)'
                           }
                         }}
                       />

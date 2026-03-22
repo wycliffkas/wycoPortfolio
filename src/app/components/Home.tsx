@@ -39,7 +39,7 @@ yearsOfExperience: 5+
   };
 
   return (
-    <div id="home" className="min-h-screen bg-[#0a0e27] text-white relative overflow-hidden">
+    <div id="home" className="min-h-screen bg-transparent text-white relative overflow-hidden">
       <AnimatedBackground />
 
       <div className="container mx-auto px-8 py-16 relative z-10">
@@ -57,9 +57,9 @@ yearsOfExperience: 5+
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-sm text-blue-400 flex items-center gap-2"
+                className="px-4 py-2 bg-[#ff6b9d]/10 border border-[#ff6b9d]/30 rounded-full text-sm text-[#ff6b9d] flex items-center gap-2 backdrop-blur-sm"
               >
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-[#ff6b9d] rounded-full animate-pulse"></span>
                 Welcome to my universe
               </motion.div>
 
@@ -67,7 +67,7 @@ yearsOfExperience: 5+
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full text-sm text-purple-400"
+                className="px-4 py-2 bg-[#7f5af0]/10 border border-[#7f5af0]/30 rounded-full text-sm text-[#7f5af0] backdrop-blur-sm"
               >
                 UI Magic
               </motion.div>
@@ -76,7 +76,7 @@ yearsOfExperience: 5+
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-sm text-cyan-400"
+                className="px-4 py-2 bg-[#2cb67d]/10 border border-[#2cb67d]/30 rounded-full text-sm text-[#2cb67d] backdrop-blur-sm"
               >
                 Clean Code
               </motion.div>
@@ -99,7 +99,7 @@ yearsOfExperience: 5+
                 className="text-6xl lg:text-7xl"
               >
                 I'm{' '}
-                <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#ff6b9d] via-[#7f5af0] to-[#4ecdc4] bg-clip-text text-transparent">
                   Abid Akram
                 </span>
               </motion.h1>
@@ -111,7 +111,7 @@ yearsOfExperience: 5+
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-lg text-sm text-blue-400"
+                className="px-4 py-2 bg-[#7f5af0]/10 border border-[#7f5af0]/30 rounded-xl text-sm text-[#7f5af0] backdrop-blur-sm shadow-lg shadow-[#7f5af0]/20"
               >
                 Learning Backend Development
               </motion.div>
@@ -120,7 +120,7 @@ yearsOfExperience: 5+
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
-                className="px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-sm text-yellow-400"
+                className="px-4 py-2 bg-[#ffa94d]/10 border border-[#ffa94d]/30 rounded-xl text-sm text-[#ffa94d] backdrop-blur-sm shadow-lg shadow-[#ffa94d]/20"
               >
                 Innovation
               </motion.div>
@@ -142,10 +142,10 @@ yearsOfExperience: 5+
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(255, 107, 157, 0.3)' }}
               whileTap={{ scale: 0.95 }}
               onClick={handleDownloadResume}
-              className="px-8 py-3 bg-transparent border-2 border-cyan-500 text-cyan-400 rounded-lg hover:bg-cyan-500/10 transition-colors duration-300"
+              className="px-8 py-3 bg-gradient-to-r from-[#ff6b9d] to-[#7f5af0] text-white rounded-xl hover:from-[#ff5086] hover:to-[#6a3fd9] transition-all duration-300 shadow-lg shadow-[#ff6b9d]/30"
             >
               Get Resume
             </motion.button>

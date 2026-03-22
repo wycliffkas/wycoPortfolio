@@ -10,7 +10,7 @@ const experiences = [
     company: 'Cisco',
     period: '2022 - Present',
     description: 'Led UX design and contributed to developing an AI-based application, enhancing user experience, optimizing performance, and improving overall functionality.',
-    color: '#00bcd4'
+    color: '#ff6b9d'
   },
   {
     icon: faLaptopCode,
@@ -18,7 +18,7 @@ const experiences = [
     company: 'OpenMoney',
     period: '2019 - 2022',
     description: 'Contributed to developing SaaS application and improving UI functionality for a seamless user experience.',
-    color: '#7c4dff'
+    color: '#7f5af0'
   },
   {
     icon: faLayerGroup,
@@ -26,7 +26,7 @@ const experiences = [
     company: 'IBM',
     period: '2018 - 2019',
     description: 'Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.',
-    color: '#ff4081'
+    color: '#4ecdc4'
   }
 ];
 
@@ -36,7 +36,7 @@ export function Experience() {
       id="experience"
       sx={{
         py: 12,
-        backgroundColor: '#0f1229',
+        backgroundColor: 'rgba(15, 5, 35, 0.5)',
         position: 'relative'
       }}
     >
@@ -51,7 +51,9 @@ export function Experience() {
             variant="h2"
             align="center"
             sx={{
-              color: '#00bcd4',
+              background: 'linear-gradient(90deg, #4ecdc4, #2cb67d, #ffa94d)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
               mb: 2,
               fontWeight: 'bold'
             }}
@@ -88,28 +90,30 @@ export function Experience() {
             >
               <Card
                 sx={{
-                  backgroundColor: 'rgba(20, 25, 50, 0.6)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(0, 188, 212, 0.2)',
-                  borderRadius: 2,
+                  backgroundColor: 'rgba(26, 11, 46, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  border: `1px solid ${exp.color}40`,
+                  borderRadius: 3,
                   height: '100%',
                   position: 'relative',
                   overflow: 'visible',
                   transition: 'all 0.3s ease',
                   '&:hover': {
-                    transform: 'translateY(-5px)',
+                    transform: 'translateY(-10px) scale(1.02)',
                     borderColor: exp.color,
-                    boxShadow: `0 10px 30px ${exp.color}33`
+                    boxShadow: `0 20px 50px ${exp.color}50`,
+                    backgroundColor: `${exp.color}08`
                   },
                   '&::before': {
                     content: '""',
                     position: 'absolute',
                     top: 0,
                     left: 0,
-                    width: '4px',
+                    width: '5px',
                     height: '100%',
-                    background: `linear-gradient(180deg, ${exp.color}, transparent)`,
-                    borderRadius: '2px 0 0 2px'
+                    background: `linear-gradient(180deg, ${exp.color}, ${exp.color}50)`,
+                    borderRadius: '3px 0 0 3px',
+                    boxShadow: `0 0 15px ${exp.color}80`
                   }
                 }}
               >
@@ -134,10 +138,10 @@ export function Experience() {
                   </Typography>
 
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-                    <Typography sx={{ color: '#00bcd4' }}>
+                    <Typography sx={{ color: exp.color, fontWeight: 'bold' }}>
                       {exp.company}
                     </Typography>
-                    <Typography sx={{ color: 'rgba(255, 255, 255, 0.5)' }}>
+                    <Typography sx={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                       {exp.period}
                     </Typography>
                   </Box>

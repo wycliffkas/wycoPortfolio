@@ -33,15 +33,15 @@ export function CodeWindow() {
       className="relative"
     >
       {/* Browser Window */}
-      <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-lg border border-cyan-500/30 shadow-2xl shadow-cyan-500/20 backdrop-blur-sm overflow-hidden">
+      <div className="bg-gradient-to-br from-[#7f5af0]/20 via-[#1a0b2e]/40 to-[#ff6b9d]/20 rounded-2xl border border-[#7f5af0]/40 shadow-2xl shadow-[#7f5af0]/30 backdrop-blur-md overflow-hidden">
         {/* Browser Header */}
-        <div className="bg-[#1a2332] px-4 py-3 flex items-center gap-2 border-b border-cyan-500/30">
+        <div className="bg-gradient-to-r from-[#1a0b2e] to-[#16052e] px-4 py-3 flex items-center gap-2 border-b border-[#7f5af0]/30">
           <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            <div className="w-3 h-3 rounded-full bg-[#ff6b9d] shadow-lg shadow-[#ff6b9d]/50"></div>
+            <div className="w-3 h-3 rounded-full bg-[#ffa94d] shadow-lg shadow-[#ffa94d]/50"></div>
+            <div className="w-3 h-3 rounded-full bg-[#2cb67d] shadow-lg shadow-[#2cb67d]/50"></div>
           </div>
-          <div className="flex-1 text-center text-sm text-cyan-400">
+          <div className="flex-1 text-center text-sm bg-gradient-to-r from-[#ff6b9d] via-[#7f5af0] to-[#4ecdc4] bg-clip-text text-transparent">
             developer.js
           </div>
         </div>
@@ -50,155 +50,155 @@ export function CodeWindow() {
         <div className="p-6 font-mono text-sm overflow-x-auto">
           <pre className="text-gray-300">
             <code>
-              <span className="text-purple-400">const</span>{' '}
-              <span className="text-blue-300">profile</span>{' '}
-              <span className="text-cyan-400">=</span>{' '}
-              <span className="text-yellow-400">{'{'}</span>
+              <span className="text-[#7f5af0]">const</span>{' '}
+              <span className="text-[#4ecdc4]">profile</span>{' '}
+              <span className="text-[#ff6b9d]">=</span>{' '}
+              <span className="text-[#ffa94d]">{'{'}</span>
               {'\n'}
               {'  '}
-              <span className="text-blue-300">name</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-green-400">'Abid Akram'</span>
+              <span className="text-[#4ecdc4]">name</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#2cb67d]">'Abid Akram'</span>
               <span className="text-gray-500">,</span>
               {'\n'}
               {'  '}
-              <span className="text-blue-300">title</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-green-400">
+              <span className="text-[#4ecdc4]">title</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#2cb67d]">
                 'Frontend Engineer | UI/UX Enthusiast | Problem Solver'
               </span>
               <span className="text-gray-500">,</span>
               {'\n'}
               {'  '}
-              <span className="text-blue-300">skills</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-yellow-400">{'['}</span>
+              <span className="text-[#4ecdc4]">skills</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#ffa94d]">{'['}</span>
               {'\n'}
               {'    '}
-              <span className="text-green-400">'Angular 18'</span>
+              <span className="text-[#2cb67d]">'Angular 18'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'React'</span>
+              <span className="text-[#2cb67d]">'React'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'JavaScript'</span>
+              <span className="text-[#2cb67d]">'JavaScript'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'TypeScript'</span>
-              <span className="text-gray-500">,</span>
-              {'\n'}
-              {'    '}
-              <span className="text-green-400">'HTML'</span>
-              <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'CSS'</span>
-              <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'SCSS'</span>
-              <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Tailwind CSS'</span>
-              <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Bootstrap'</span>
+              <span className="text-[#2cb67d]">'TypeScript'</span>
               <span className="text-gray-500">,</span>
               {'\n'}
               {'    '}
-              <span className="text-green-400">'REST API'</span>
+              <span className="text-[#2cb67d]">'HTML'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Git'</span>
+              <span className="text-[#2cb67d]">'CSS'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'MySQL'</span>
+              <span className="text-[#2cb67d]">'SCSS'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'MongoDB'</span>
+              <span className="text-[#2cb67d]">'Tailwind CSS'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'CI/CD'</span>
+              <span className="text-[#2cb67d]">'Bootstrap'</span>
               <span className="text-gray-500">,</span>
               {'\n'}
               {'    '}
-              <span className="text-green-400">'Linux'</span>
+              <span className="text-[#2cb67d]">'REST API'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Docker (Basic)'</span>
+              <span className="text-[#2cb67d]">'Git'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Figma'</span>
+              <span className="text-[#2cb67d]">'MySQL'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'Adobe Photoshop'</span>
+              <span className="text-[#2cb67d]">'MongoDB'</span>
+              <span className="text-gray-500">,</span>{' '}
+              <span className="text-[#2cb67d]">'CI/CD'</span>
               <span className="text-gray-500">,</span>
               {'\n'}
               {'    '}
-              <span className="text-green-400">'Webflow'</span>
+              <span className="text-[#2cb67d]">'Linux'</span>
               <span className="text-gray-500">,</span>{' '}
-              <span className="text-green-400">'WordPress'</span>
-              {'\n'}
-              {'  '}
-              <span className="text-yellow-400">{']'}</span>
+              <span className="text-[#2cb67d]">'Docker (Basic)'</span>
+              <span className="text-gray-500">,</span>{' '}
+              <span className="text-[#2cb67d]">'Figma'</span>
+              <span className="text-gray-500">,</span>{' '}
+              <span className="text-[#2cb67d]">'Adobe Photoshop'</span>
               <span className="text-gray-500">,</span>
-              {'\n'}
-              {'  '}
-              <span className="text-blue-300">hardWorker</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-orange-400">true</span>
-              <span className="text-gray-500">,</span>
-              {'\n'}
-              {'  '}
-              <span className="text-blue-300">quickLearner</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-orange-400">true</span>
-              <span className="text-gray-500">,</span>
-              {'\n'}
-              {'  '}
-              <span className="text-blue-300">problemSolver</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-orange-400">true</span>
-              <span className="text-gray-500">,</span>
-              {'\n'}
-              {'  '}
-              <span className="text-blue-300">yearsOfExperience</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-orange-400">5+</span>
-              <span className="text-gray-500">,</span>
-              {'\n'}
-              {'  '}
-              <span className="text-blue-300">hireable</span>
-              <span className="text-cyan-400">:</span>{' '}
-              <span className="text-purple-400">function</span>
-              <span className="text-yellow-400">{'()'}</span>{' '}
-              <span className="text-yellow-400">{'{'}</span>
               {'\n'}
               {'    '}
-              <span className="text-purple-400">return</span>{' '}
-              <span className="text-yellow-400">{'('}</span>
+              <span className="text-[#2cb67d]">'Webflow'</span>
+              <span className="text-gray-500">,</span>{' '}
+              <span className="text-[#2cb67d]">'WordPress'</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#ffa94d]">{']'}</span>
+              <span className="text-gray-500">,</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#4ecdc4]">hardWorker</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#ffa94d]">true</span>
+              <span className="text-gray-500">,</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#4ecdc4]">quickLearner</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#ffa94d]">true</span>
+              <span className="text-gray-500">,</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#4ecdc4]">problemSolver</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#ffa94d]">true</span>
+              <span className="text-gray-500">,</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#4ecdc4]">yearsOfExperience</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#ffa94d]">5+</span>
+              <span className="text-gray-500">,</span>
+              {'\n'}
+              {'  '}
+              <span className="text-[#4ecdc4]">hireable</span>
+              <span className="text-[#ff6b9d]">:</span>{' '}
+              <span className="text-[#7f5af0]">function</span>
+              <span className="text-[#ffa94d]">{'()'}</span>{' '}
+              <span className="text-[#ffa94d]">{'{'}</span>
+              {'\n'}
+              {'    '}
+              <span className="text-[#7f5af0]">return</span>{' '}
+              <span className="text-[#ffa94d]">{'('}</span>
               {'\n'}
               {'      '}
-              <span className="text-cyan-400">this</span>
+              <span className="text-[#ff6b9d]">this</span>
               <span className="text-gray-500">.</span>
-              <span className="text-blue-300">hardWorker</span>{' '}
-              <span className="text-pink-400">&&</span>
+              <span className="text-[#4ecdc4]">hardWorker</span>{' '}
+              <span className="text-[#ff6b9d]">&&</span>
               {'\n'}
               {'      '}
-              <span className="text-cyan-400">this</span>
+              <span className="text-[#ff6b9d]">this</span>
               <span className="text-gray-500">.</span>
-              <span className="text-blue-300">problemSolver</span>{' '}
-              <span className="text-pink-400">&&</span>
+              <span className="text-[#4ecdc4]">problemSolver</span>{' '}
+              <span className="text-[#ff6b9d]">&&</span>
               {'\n'}
               {'      '}
-              <span className="text-cyan-400">this</span>
+              <span className="text-[#ff6b9d]">this</span>
               <span className="text-gray-500">.</span>
-              <span className="text-blue-300">skills</span>
+              <span className="text-[#4ecdc4]">skills</span>
               <span className="text-gray-500">.</span>
-              <span className="text-blue-300">length</span>{' '}
-              <span className="text-pink-400">{'>='}</span>{' '}
-              <span className="text-orange-400">5</span>{' '}
-              <span className="text-pink-400">&&</span>
+              <span className="text-[#4ecdc4]">length</span>{' '}
+              <span className="text-[#ff6b9d]">{'>='}</span>{' '}
+              <span className="text-[#ffa94d]">5</span>{' '}
+              <span className="text-[#ff6b9d]">&&</span>
               {'\n'}
               {'      '}
-              <span className="text-cyan-400">this</span>
+              <span className="text-[#ff6b9d]">this</span>
               <span className="text-gray-500">.</span>
-              <span className="text-blue-300">yearsOfExperience</span>{' '}
-              <span className="text-pink-400">{'>='}</span>{' '}
-              <span className="text-orange-400">5+</span>
+              <span className="text-[#4ecdc4]">yearsOfExperience</span>{' '}
+              <span className="text-[#ff6b9d]">{'>='}</span>{' '}
+              <span className="text-[#ffa94d]">5+</span>
               {'\n'}
               {'    '}
-              <span className="text-yellow-400">{')'}</span>
+              <span className="text-[#ffa94d]">{')'}</span>
               <span className="text-gray-500">;</span>
               {'\n'}
               {'  '}
-              <span className="text-yellow-400">{'}'}</span>
+              <span className="text-[#ffa94d]">{'}'}</span>
               {'\n'}
-              <span className="text-yellow-400">{'}'}</span>
+              <span className="text-[#ffa94d]">{'}'}</span>
               <span className="text-gray-500">;</span>
             </code>
           </pre>
@@ -206,7 +206,7 @@ export function CodeWindow() {
       </div>
 
       {/* Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-lg blur-xl -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b9d]/20 via-[#7f5af0]/15 to-[#4ecdc4]/20 rounded-2xl blur-2xl -z-10"></div>
     </motion.div>
   );
 }

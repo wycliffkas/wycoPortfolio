@@ -9,7 +9,7 @@ export function Contact() {
       id="contact"
       sx={{
         py: 12,
-        backgroundColor: '#0f1229',
+        backgroundColor: 'transparent',
         position: 'relative'
       }}
     >
@@ -23,7 +23,9 @@ export function Contact() {
           <Typography
             variant="h2"
             sx={{
-              color: '#00bcd4',
+              background: 'linear-gradient(90deg, #ff6b9d, #ffa94d, #2cb67d)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
               mb: 2,
               fontWeight: 'bold'
             }}
@@ -61,12 +63,13 @@ export function Contact() {
                   sx={{
                     width: 50,
                     height: 50,
-                    borderRadius: 1,
-                    background: 'linear-gradient(135deg, #7c4dff, #00bcd4)',
+                    borderRadius: 2,
+                    background: 'linear-gradient(135deg, #ff6b9d, #7f5af0)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    mr: 2
+                    mr: 2,
+                    boxShadow: '0 8px 20px rgba(255, 107, 157, 0.3)'
                   }}
                 >
                   <FontAwesomeIcon icon={faEnvelope} size="lg" color="#fff" />
@@ -75,7 +78,7 @@ export function Contact() {
                   <Typography sx={{ color: '#fff', fontWeight: 'bold' }}>
                     Email
                   </Typography>
-                  <Typography sx={{ color: '#00bcd4' }}>
+                  <Typography sx={{ color: '#ff6b9d' }}>
                     abid.akram01@gmail.com
                   </Typography>
                 </Box>
@@ -86,12 +89,13 @@ export function Contact() {
                   sx={{
                     width: 50,
                     height: 50,
-                    borderRadius: 1,
-                    background: 'linear-gradient(135deg, #ff4081, #7c4dff)',
+                    borderRadius: 2,
+                    background: 'linear-gradient(135deg, #4ecdc4, #2cb67d)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    mr: 2
+                    mr: 2,
+                    boxShadow: '0 8px 20px rgba(78, 205, 196, 0.3)'
                   }}
                 >
                   <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" color="#fff" />
@@ -109,14 +113,17 @@ export function Contact() {
               <Button
                 variant="outlined"
                 sx={{
-                  color: '#00bcd4',
-                  borderColor: '#00bcd4',
+                  background: 'linear-gradient(90deg, #7f5af0, #ff6b9d)',
+                  color: '#fff',
+                  border: 'none',
                   textTransform: 'none',
                   px: 4,
                   py: 1.5,
+                  borderRadius: '25px',
+                  boxShadow: '0 5px 20px rgba(127, 90, 240, 0.4)',
                   '&:hover': {
-                    backgroundColor: 'rgba(0, 188, 212, 0.1)',
-                    borderColor: '#00bcd4'
+                    background: 'linear-gradient(90deg, #6a3fd9, #ff5086)',
+                    boxShadow: '0 8px 25px rgba(127, 90, 240, 0.5)'
                   }
                 }}
               >
@@ -133,10 +140,11 @@ export function Contact() {
           >
             <Card
               sx={{
-                backgroundColor: 'rgba(20, 25, 50, 0.6)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(0, 188, 212, 0.2)',
-                borderRadius: 2
+                backgroundColor: 'rgba(26, 11, 46, 0.4)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(127, 90, 240, 0.3)',
+                borderRadius: 3,
+                boxShadow: '0 10px 40px rgba(127, 90, 240, 0.2)'
               }}
             >
               <CardContent sx={{ p: 4 }}>
@@ -153,10 +161,10 @@ export function Contact() {
                           borderColor: 'rgba(255, 255, 255, 0.1)'
                         },
                         '&:hover fieldset': {
-                          borderColor: 'rgba(0, 188, 212, 0.5)'
+                          borderColor: 'rgba(127, 90, 240, 0.5)'
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: '#00bcd4'
+                          borderColor: '#7f5af0'
                         }
                       },
                       '& .MuiInputBase-input::placeholder': {
@@ -179,10 +187,10 @@ export function Contact() {
                           borderColor: 'rgba(255, 255, 255, 0.1)'
                         },
                         '&:hover fieldset': {
-                          borderColor: 'rgba(0, 188, 212, 0.5)'
+                          borderColor: 'rgba(127, 90, 240, 0.5)'
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: '#00bcd4'
+                          borderColor: '#7f5af0'
                         }
                       },
                       '& .MuiInputBase-input::placeholder': {
@@ -204,10 +212,10 @@ export function Contact() {
                           borderColor: 'rgba(255, 255, 255, 0.1)'
                         },
                         '&:hover fieldset': {
-                          borderColor: 'rgba(0, 188, 212, 0.5)'
+                          borderColor: 'rgba(127, 90, 240, 0.5)'
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: '#00bcd4'
+                          borderColor: '#7f5af0'
                         }
                       },
                       '& .MuiInputBase-input::placeholder': {
@@ -231,10 +239,10 @@ export function Contact() {
                           borderColor: 'rgba(255, 255, 255, 0.1)'
                         },
                         '&:hover fieldset': {
-                          borderColor: 'rgba(0, 188, 212, 0.5)'
+                          borderColor: 'rgba(127, 90, 240, 0.5)'
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: '#00bcd4'
+                          borderColor: '#7f5af0'
                         }
                       },
                       '& .MuiInputBase-input::placeholder': {
@@ -249,12 +257,15 @@ export function Contact() {
                     fullWidth
                     endIcon={<FontAwesomeIcon icon={faPaperPlane} />}
                     sx={{
-                      background: 'linear-gradient(45deg, #00bcd4, #7c4dff)',
+                      background: 'linear-gradient(90deg, #ff6b9d, #7f5af0, #4ecdc4)',
                       textTransform: 'none',
                       py: 1.5,
                       fontSize: '1rem',
+                      borderRadius: '10px',
+                      boxShadow: '0 8px 25px rgba(255, 107, 157, 0.4)',
                       '&:hover': {
-                        background: 'linear-gradient(45deg, #00acc1, #6a3de8)'
+                        background: 'linear-gradient(90deg, #ff5086, #6a3fd9, #3fb8ae)',
+                        boxShadow: '0 10px 30px rgba(255, 107, 157, 0.5)'
                       }
                     }}
                   >
