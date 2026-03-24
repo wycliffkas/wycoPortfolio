@@ -21,5 +21,5 @@ export default defineConfig({
   assetsInclude: ['**/*.svg', '**/*.csv'],
 
   // Add base property for GitHub Pages deployment
-  base: '/Developerportfolio/', // Replace <repository-name> with your repo name
+  base: '/wycoPortfolio/', // Replace <repository-name> with your repo name
 })
