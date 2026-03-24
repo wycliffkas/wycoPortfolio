@@ -1,8 +1,9 @@
 {
-  "name": "@figma/my-make-file",
+  "name": "wycoPortfolio",
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://wycliffkas.github.io/wycoPortfolio"
   "scripts": {
     "build": "vite build",
     "dev": "vite",
