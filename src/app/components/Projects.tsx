@@ -4,15 +4,15 @@ import { motion } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import projectImage1 from 'figma:asset/16f1fe20533fc4376dba28338ab44c86b0c5377b.png';
-import projectImage2 from 'figma:asset/3f81a5e84be53f15c63eedc5ee6528deb1d8e093.png';
-import projectImage3 from 'figma:asset/84237a39a1aa848f77dea598933f28831c116b86.png';
+// import projectImage1 from 'figma:asset/16f1fe20533fc4376dba28338ab44c86b0c5377b.png';
+// import projectImage2 from 'figma:asset/3f81a5e84be53f15c63eedc5ee6528deb1d8e093.png';
+// import projectImage3 from 'figma:asset/84237a39a1aa848f77dea598933f28831c116b86.png';
 
 const projects = [
   {
     title: 'FlixMovies',
     description: 'A movie discovery platform built with Angular. It includes UX design and frontend implementation.',
-    image: projectImage1,
+    image: 'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
     tags: ['Angular 18', 'TypeScript', 'Tailwind CSS', 'IMDB - Rest API', 'Figma', 'UX Design'],
     category: 'frontend',
     featured: true
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Text to Image Generator AI',
     description: 'An AI image generator built with Angular. Enter text prompts and generate stunning images using cutting-edge AI models.',
-    image: projectImage2,
+    image: 'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
     tags: ['Angular 18', 'TypeScript', 'SCSS', 'Hugging Face - Models & API'],
     category: 'frontend',
     featured: false
@@ -28,7 +28,7 @@ const projects = [
   {
     title: '100 Daily UI Challenges',
     description: 'A collection of 100 daily UI challenges, showcasing various design concepts and implementations.',
-    image: projectImage3,
+    image:'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
     tags: ['Figma', 'UX Design'],
     category: 'ux',
     featured: false
