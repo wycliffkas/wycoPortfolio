@@ -6,8 +6,8 @@
   "homepage": "https://wycliffkas.github.io/wycoPortfolio",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
-    "deploy": "gh-pages -d dist --add"
+    "predeploy": "pnpm build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
