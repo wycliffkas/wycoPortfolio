@@ -15,7 +15,7 @@ const skillCategories = [
     title: 'Frontend Development',
     icon: faCode,
     color: '#ff6b9d',
-    skills: ['Angular', 'React', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3']
+    skills: ['Vue', 'React', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3']
   },
   {
     title: 'Backend Development',

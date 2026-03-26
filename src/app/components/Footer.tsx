@@ -17,7 +17,7 @@ export function Footer() {
       <Container maxWidth="lg">
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 2 }}>
           <Typography sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-            Handcrafted with <FontAwesomeIcon icon={faHeart} color="#ff6b9d" beat /> by Abid Akram.
+            Handcrafted with <FontAwesomeIcon icon={faHeart} color="#ff6b9d" beat /> by Wycliff Kasirye.
           </Typography>
 
           <Box sx={{ display: 'flex', gap: 1 }}>

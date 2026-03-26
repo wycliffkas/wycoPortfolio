@@ -79,7 +79,7 @@ export function Contact() {
                     Email
                   </Typography>
                   <Typography sx={{ color: '#ff6b9d' }}>
-                    abid.akram01@gmail.com
+                    w4wycliff@gmail.com
                   </Typography>
                 </Box>
               </Box>
@@ -105,7 +105,7 @@ export function Contact() {
                     Location
                   </Typography>
                   <Typography sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-                    Bengaluru, Karnataka 560103
+                    Michigan, United States
                   </Typography>
                 </Box>
               </Box>

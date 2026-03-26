@@ -54,7 +54,7 @@ export function Hero() {
               fontWeight: 'bold'
             }}
           >
-            Abid Akram
+            Wycliff Kasirye
           </Typography>
 
           <Typography
