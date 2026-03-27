@@ -4,13 +4,10 @@ import { AnimatedBackground } from "./AnimatedBackground";
 
 export function Home() {
   const handleDownloadResume = () => {
-    const pdfPath = "/wycliff_kasirye_resume.pdf"; // Ensure the path points to the root of the public folder
-    const a = document.createElement("a");
-    a.href = pdfPath;
-    a.download = "Wycliff_Kasirye_Resume.pdf";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    const link = document.createElement("a");
+    link.href = `/wycoPortfolio/wycliff_kasirye_resume.pdf`;
+    link.download = "wycliff_kasirye_resume.pdf";
+    link.click();
   };
 
   return (
