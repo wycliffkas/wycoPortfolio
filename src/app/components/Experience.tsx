@@ -21,16 +21,16 @@ const experiences = [
     icon: faLaptopCode,
     title: "Senior Full Stack Engineer",
     company: "Beedeez",
-    period: "2019 - 2022",
+    period: "2021 - 2024",
     description:
       "Contributed to migrating a monolithic backend to a Kafka-driven microservices architecture, developed real-time collaboration and interactive learning features using Yjs and Socket.IO, optimized frontend and backend performance, integrated external LMS platforms, and implemented internationalization, resulting in improved scalability, reduced downtime, faster load times, increased user engagement, and expanded global accessibility.",
     color: "#7f5af0"
   },
   {
     icon: faLayerGroup,
-    title: "UI Developer",
-    company: "IBM",
-    period: "2018 - 2019",
+    title: "Full Stack Engineer",
+    company: "Andela",
+    period: "2018 - 2021",
     description:
       "Developed and enhanced a meeting room management platform by integrating Google Calendar, implementing automated email reminders, building analytics dashboards, strengthening security with JWT authentication, establishing centralized state management with Redux, and optimizing frontend and backend performance to improve user experience, operational efficiency, and system responsiveness.",
     color: "#4ecdc4"
