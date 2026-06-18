@@ -14,7 +14,7 @@ const experiences = [
     company: "United Wholesale Mortgage",
     period: "2025 - Present",
     description:
-      "Develop responsive, high-performance web applications using React.js, Redux/Context, Hooks, and modern JavaScript; build clean, scalable, and reusable components following industry best practices; implement pixel-perfect UI/UX designs across all device types; integrate RESTful APIs and third-party services; collaborate closely with backend developers, designers, QA engineers, and product managers to ensure seamless data flow and successful delivery; optimize applications for performance across browsers and devices; conduct code reviews, debugging, testing, and performance tuning.",
+      "Developing responsive, high-performance, and user-friendly web interfaces using modern JavaScript frameworks while collaborating with cross-functional teams to deliver seamless, accessible, and optimized user experiences across devices.",
     color: "#ff6b9d"
   },
   {
@@ -23,7 +23,7 @@ const experiences = [
     company: "Beedeez",
     period: "2021 - 2024",
     description:
-      "Contributed to migrating a monolithic backend to a Kafka-driven microservices architecture, developed real-time collaboration and interactive learning features using Yjs and Socket.IO, optimized frontend and backend performance, integrated external LMS platforms, and implemented internationalization, resulting in improved scalability, reduced downtime, faster load times, increased user engagement, and expanded global accessibility.",
+      "Developing, and maintaining end-to-end web applications by building scalable frontend interfaces, robust backend services, APIs, databases, and cloud integrations while ensuring performance, security, and seamless user experiences.",
     color: "#7f5af0"
   },
   {
@@ -32,7 +32,7 @@ const experiences = [
     company: "Andela",
     period: "2018 - 2021",
     description:
-      "Developed and enhanced a meeting room management platform by integrating Google Calendar, implementing automated email reminders, building analytics dashboards, strengthening security with JWT authentication, establishing centralized state management with Redux, and optimizing frontend and backend performance to improve user experience, operational efficiency, and system responsiveness.",
+      "Developing, and maintaining end-to-end web applications by building scalable frontend interfaces, robust backend services, APIs, databases, and cloud integrations while ensuring performance, security, and seamless user experiences.",
     color: "#4ecdc4"
   }
 ];
